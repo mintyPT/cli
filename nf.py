@@ -2,6 +2,8 @@
 # ln nf.py /usr/local/bin/nf.py
 # chmod a+x nf.py
 
+# After doing this I learned about touch :/
+
 import os
 import optparse
 
