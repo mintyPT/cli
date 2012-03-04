@@ -22,4 +22,32 @@ Simple script to scrape the last post's title from dontevenreply.com so I can ke
 
 **Usage:** Simply run it, it prints to the console.
 
+## sorter.py
+
+This will:
+	- Sort your files
+	- Delete folders with no files
+	- Delete folders with one file after extracting them to the parent folder
+
+Use carefully! 
+
+
+### ToDo
+
+- Comment the code
+- Good support for the command 
+- Sorting by keyword
+- Support to run over time automatically
+- Config type script
+- More functions? 
+- Convert it to a true cli utility and merge it into a new project
+
+
+### Other
+
+Had a problem with github's git app. Had to use 
+<pre><code>git stash</code></pre>
+to be able to commit this and then 
+<pre><code>git stash pop</code></pre>
+after committing and syncing, although I'm still not quite sure at the moment on how this works. This is only a quick fix.
 

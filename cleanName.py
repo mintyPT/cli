@@ -1,39 +1,39 @@
 #!/usr/bin/env python
 
-# cleanName.py is meant to clean the name of your files
-# it will simply remove '.', '-', '_' and multiple
-# spaces. 
-# Before renaming, it will ask you for permission.
-
 import os
 
 
-def cleanName():
-	path = './'
 
-	dirList = os.listdir(path)
+def newName(namef):
+	repChars = ['.', '-', '_', '    ', '   ', '  ']
+
+	for c in repChars:
+		namef = namef.replace(c, ' ')
+
+	namef = namef.strip()
+
+	return namef
+
+
+
+def cleanName():
+	dirList = os.listdir('./')
 
 	for item in dirList:
 		if item[0] != '.':
 			
 			(name, ext) = os.path.splitext(item)
 
-			namef = name
-			namef = namef.replace('.', ' ')
-			namef = namef.replace('-', ' ')
-			namef = namef.replace('_', ' ')
-
-			namef = namef.replace('    ', ' ') # 4 espacos
-			namef = namef.replace('   ', ' ')  # 3 espacos
-			namef = namef.replace('  ', ' ')   # 2 espacos
-			namef = namef.strip()
+			namef = newName(name)		
 			
 			if name != namef:
-				print 'Rename? \t%s \nto:\t\t%s' % (name+ ext, namef+ ext)
+				print 'Rename? \t%s \nto:\t\t%s' % (name + ext, namef + ext)
 				
-				v = raw_input('(y/n) ')
-				if v == 'y':
-					os.rename(path + name + ext, path + namef + ext)
+				# v = raw_input('(y/n) ')
+				# if v == 'y':
+				# 	os.rename(name + ext, namef + ext)
+
+				os.rename(name + ext, namef + ext) if raw_input('(y/n) ') == 'y' else ''
 
 
 cleanName()
