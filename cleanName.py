@@ -5,7 +5,7 @@ import os
 
 
 def newName(namef):
-	repChars = ['.', '-', '_', '    ', '   ', '  ']
+	repChars = ['.', '_', '    ', '   ', '  ', '-']
 
 	for c in repChars:
 		namef = namef.replace(c, ' ')
@@ -37,3 +37,4 @@ def cleanName():
 
 
 cleanName()
+print 'Done!'
