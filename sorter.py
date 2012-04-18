@@ -5,22 +5,24 @@ import shutil
 dest = {
     '# media': ['rmvb', 'mp4', 'avi', 'mkv', 'wmv', 'mov', 'flv'],
     '# pdf': ['pdf', 'djvu'],
+    '# markdown': ['md'],
     '# arquive': ['zip', 'rar'],
     '# BD': ['cbr', 'cbds'],
     '# matlab': ['fig', 'm'],
     '# music': ['mp3', 'm4a', 'wma', 'ogg'],
     '# firefox': ['xpi'],
-    '# photoshop': ['atn', 'acv', 'psd'],
+    '# photoshop': ['atn', 'acv'],
     '# email': ['eml'],
     '# webloc': ['webloc'],
-    '# pics': ['jpg', 'jpeg', 'png', 'gif'],
-    '# powerpoint': ['pps', 'ppt'],
+    '# pics': ['jpg', 'jpeg', 'png', 'gif', 'psd'],
+    '# powerpoint': ['pps', 'ppt', 'key'],
     '# doc': ['doc', 'docx', 'xls', 'xlsx'],
     '# txt': ['txt', 'rtf'],
     '# html': ['html'],
     '# wii': ['wbfs'],
+    '# scripts': ['sh'],
     '# win stuff': ['exe'],
-    '# mac apps': ['dmg', 'app', 'prefPane', 'pkg'],
+    '# mac apps': ['dmg', 'prefPane', 'pkg'],
     '# mac apps/# adium': ['AdiumSoundset', 'AdiumMessageStyle', 'AdiumMessageStyle']
     }
 
