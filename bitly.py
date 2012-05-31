@@ -3,7 +3,13 @@ import json
 import requests
 
 
+# This was meant to be used on a personal learning project
+# but after coding this, I discovered a couldnt use it
+# and went another way down the road.
+
+
 def getPageTitle(_url):
+    """ Get the title from an url """
     r = requests.get(_url)
 
     source = r.text
@@ -19,7 +25,7 @@ def getPageTitle(_url):
 
 
 def bitlyAccountCreator(username, password, email):
-    
+    """ Bitly account creator """
 
     s = requests.session()
 
@@ -56,7 +62,7 @@ def bitlyAccountCreator(username, password, email):
 
 
 def bitly(long_url, login_user, login_password):
-    
+    """ Login and shorten a long url at bitly """
 
     s = requests.session()
 
@@ -109,12 +115,6 @@ def bitly(long_url, login_user, login_password):
             print 'something went wrong with the url shortner'
             print response
             return
-
-
-
-
-
-
 
 
 
