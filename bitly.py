@@ -1,7 +1,6 @@
 #!/usr/bin/python
-import urllib
-import requests
 import json
+import requests
 
 
 def getPageTitle(_url):
@@ -117,20 +116,18 @@ def bitly(long_url, login_user, login_password):
 
 
 
-if __name__ == '__main__':
-    
-    login    = 'customemoustard'  
-    password = 'customemoustard'    
 
-    url = 'http://lifehacker.com/5823096/how-to-burn-your-own-lion-install-dvd-or-flash-drive'
-    
-    # print bitly(url, login, password)
 
-    username = 'manuelsilva323444'
-    email = username + '@mailinator.com'
-    password = username
 
-    # bitlyAccountCreator(username, password, email)
+# login    = ''  
+# password = ''    
+# url = ''
+# print bitly(url, login, password)
+
+# username = ''
+# email = ''
+# password = ''
+# bitlyAccountCreator(username, password, email)
 
     
 
